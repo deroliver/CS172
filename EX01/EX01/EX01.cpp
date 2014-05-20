@@ -35,13 +35,15 @@ void ex02(){
 	int temp;
 	if (x >= y){//If x is greater than or equal to y
 		if (hasPassedTest){//hasPassedTest is already true
-			cout << "X is greater than or equal to Y" << endl << endl << endl;//Tell the user x is greater than or equal to y
+			cout << "X is greater than or equal to Y" << endl << endl << endl;//Tell the user x 
+			//is greater than or equal to y
 		}
 	}
 	else if (x < y){//If x is less than y
 		hasPassedTest = false;//Set hasPassedTest to false
 		if (!hasPassedTest){//If not hasPassedTest is true
-			cout << "X is not greater than or equal to Y" << endl << endl << endl;//Tell the user x is not less than or equal to y
+			cout << "X is not greater than or equal to Y" << endl << endl << endl;//Tell the user x is 
+			//not less than or equal to y
 		}
 	}
 		
@@ -51,13 +53,15 @@ void ex02(){
 		if (numberOfShares < 100){//If less than 100
 			hasPassedTest = true;//hasPassedTest set to true
 			if (hasPassedTest){
-				cout << "The number of shares is less than 100" << endl << endl << endl;//Tell User number of shares is less than 100
+				cout << "The number of shares is less than 100" << endl << endl << endl;//Tell User 
+				//number of shares is less than 100
 			}
 		}
 		else if (numberOfShares >= 100){//If greater than or equal to
 			hasPassedTest = false;//Set hasPassedTest to false
 			if (!hasPassedTest){//If not hasPassedTest is true
-				cout << "The number of shares is greater than or equal to 100" << endl << endl << endl;//Tell user number of shares is not greater than or equal to 100
+				cout << "The number of shares is greater than or equal to 100" << endl << endl << endl;
+				//Tell user number of shares is not greater than or equal to 100
 			}
 		}
 	
@@ -69,13 +73,15 @@ void ex02(){
 		if (boxWidth % bookWidth == 0){//Check for even divisibility
 			hasPassedTest = true;//If evenly divisible, hasPassedTest set to true
 			if (hasPassedTest){
-				cout << "The box width is evenly divisible by the book width" << endl << endl << endl;//Tell user box width is evenly divisible by book width
+				cout << "The box width is evenly divisible by the book width" << endl << endl << endl;
+				//Tell user box width is evenly divisible by book width
 			}
 		}
 		else if (boxWidth % bookWidth != 0){//If not evenly divisible
 			hasPassedTest = false;//Set hasPassedTest to false
 			if (!hasPassedTest){
-				cout << "The box width is not evenly divisible by the book width" << endl << endl << endl;//Tell user box width is noy evenly divisible by book width
+				cout << "The box width is not evenly divisible by the book width" << endl << endl << endl;
+				//Tell user box width is noy evenly divisible by book width
 			}
 		}
 
@@ -87,14 +93,16 @@ void ex02(){
 			hasPassedTest = true;//Set hasPassedTest to true
 			if (hasPassedTest){
 				shelfLife = shelfLife - 4;//Subtract 4 from shelf life
-				cout << "Your actual shelf life is: " << shelfLife <<  endl << endl << endl;//Output actual shelf life
+				cout << "Your actual shelf life is: " << shelfLife <<  endl << endl << endl;
+				//Output actual shelf life
 			}
 		}
 		else{
 			hasPassedTest = false;//If not greater than 90, hasPassedTest set to false
 			if (!hasPassedTest){//If not hasPassedTest
 				shelfLife = shelfLife;//shelfLife is not changed
-				cout << "Your shelf life is unaffected" << endl << endl << endl;//Output original shelf life
+				cout << "Your shelf life is unaffected" << endl << endl << endl;
+				//Output original shelf life
 			}
 		}
 		
@@ -144,7 +152,8 @@ void ex04(){
 		int temp = i * i * i;//Set the cube of the number equal to temp
 		sum += temp;//Add temp to sum
 	}
-	cout << "The sum of the cubes from 1 to " << numb << " is " << sum << endl << endl << endl;//Output the sum of the cubbes
+	cout << "The sum of the cubes from 1 to " << numb << " is " << sum << endl << endl << endl;
+	//Output the sum of the cubbes
 	
 	do{//Output an asterisk
 		cout << "*" << endl;
@@ -209,7 +218,8 @@ void ex05(){
 	for (int i = 0; i < SET; i++){//Loops between 0 and size of array
 		product *= numbers[i];//Multiplies every number in the array
 	}
-	cout << "The product of your numbers is: " << product << endl << endl << endl;//Outputs product of all numbers in the array
+	cout << "The product of your numbers is: " << product << endl << endl << endl;//Outputs product of 
+	//all numbers in the array
 
 	cout << "The numbers you entered are: " << endl;
 	Array(numbers, SET);//Calls function Array
@@ -237,6 +247,7 @@ void Array1(int array[], int size){
 			n++;//Increments everytime the entered number is in the array
 		}
 	}
-		cout << temp << " is in the array " << n << " times" << endl << endl << endl;//Outputs the number of times the value is in the array
+		cout << temp << " is in the array " << n << " times" << endl << endl << endl;//Outputs the number 
+		//of times the value is in the array
 	
 }
